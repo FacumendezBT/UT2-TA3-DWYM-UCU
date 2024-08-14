@@ -1,11 +1,11 @@
 
-let btn = document.getElementById('btn');
-let arrayElementos = document.getElementById('texto').value.split(',');
-let itemABorrar = document.getElementById('item').value;
+const btn = document.getElementById('btn');
+const arrayElementosButton = document.getElementById('texto');
+const itemABorrarButton = document.getElementById('item');
 
 btn.addEventListener('click', function(){
-    arrayElementos = document.getElementById('texto').value.split(',');
-    itemABorrar = document.getElementById('item').value;
+    let arrayElementos = arrayElementosButton.value.split(',');
+    let itemABorrar = itemABorrarButton.value;
     removeFromArray(arrayElementos, itemABorrar);
 });
 
